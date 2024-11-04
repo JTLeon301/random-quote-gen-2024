@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Random Quote Generator</title>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body class="d-flex align-items-center justify-content-center min-vh-100">
+        <!-- Container to hold the main functionality of the website -->
+        <div class="container text-center">
+            <h1 class="mb-4">Random Quote Generator</h1>
+            <!--Division to hold the buttons for all categories of quotes -->
+            <div class="btn-group mb-4" role="group" aria-label="Quote Categories">
+                <button type="button" class="btn btn-primary" onclick="loadQuote('humor')">Humor</button>
+                <button type="button" class="btn btn-primary" onclick="loadQuote('inspiration')">Inspiration</button>
+                <button type="button" class="btn btn-primary" onclick="loadQuote('love')">Love</button>
+                <button type="button" class="btn btn-primary" onclick="loadQuote('motivation')">Motivation</button>
+                <button type="button" class="btn btn-primary" onclick="loadQuote('success')">Success</button>
+                <button type="button" class="btn btn-primary" onclick="loadQuote('wisdom')">Wisdom</button>
+            </div>
+            <!-- Division to display the quote -->
+             <div id="quoteDisplay" class="border p-4 bg-light position-relative">
+                <!-- Displays the quote and author that was randomly chosen for the category -->
+                <p id="quoteText">Select a category to display a quote!</p>
+                <p id="quoteAuthor" class="text-muted"></p>
+             </div>
+        </div>
+        <script src="scripts.js"></script>
+    </body>
+</html>
